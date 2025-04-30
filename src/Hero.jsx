@@ -4,7 +4,7 @@ import { motion } from "motion/react"
 
 const Hero = () => {
   return (
-    <section className='text-white py-10'>
+    <section className='text-white py-10' id='home'>
       {/* Profile Image */}
       <motion.img
         initial={{ opacity: 0, scale: 0 }}
@@ -15,7 +15,7 @@ const Hero = () => {
         }}
         src={profileImg}
         alt="Profile of Muneeswaran"
-        className='mx-auto w-2/3 md:w-1/3 lg:w-1/4 rounded-full'
+       className="w-64 h-64 object-cover rounded-full mx-auto"
       />
 
       {/* Hero Content */}
