@@ -8,7 +8,7 @@ import Contect from './Contect'
 
 const App = () => {
   return (
-    <div className='bg-gray-900'> 
+    <div className='bg-gray-800'> 
         <Navbar/>
         <Hero/>
         <About/>

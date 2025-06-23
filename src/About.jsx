@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutImg from "./assets/boy2.png";
+import AboutImg from "./assets/munees.png";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 
@@ -30,7 +30,7 @@ const About = () => {
           transition={{ delay: 0.5, duration: 0.5 }}
           className='mb-12 text-gray-400 max-w-2xl mx-auto leading-relaxed'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quia.
+          I'm a passionate and motivated fresher who is currently focused on full-stack development using the MERN stack. I enjoy learning by building real-world projects and constantly improving my skills through hands-on experience.
         </motion.p>
       </div>
 
@@ -56,7 +56,7 @@ const About = () => {
           transition={{ delay: 0.9, duration: 0.5 }}
           className='md:w-1/2 text-gray-400 text-base lg:text-lg md:text-xl leading-relaxed'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat nulla eligendi vel vero magnam animi, ipsum possimus odio, similique unde earum at ex nostrum! Eligendi quae earum magni ipsum!
+          I started my web development journey recently and have built multiple frontend and full-stack projects using technologies like React, Node.js, Express, and MongoDB. I’m always eager to learn new things and excited to kickstart my career as a developer.
         </motion.p>
       </div>
 
@@ -77,7 +77,7 @@ const About = () => {
             transition={{ delay: 1.2, duration: 0.5 }}
             className='text-sm sm:text-base text-gray-300'
           >
-            MERN Projects
+            MERN Projects i have Made
           </motion.p>
         </motion.div>
         <motion.div
@@ -87,7 +87,7 @@ const About = () => {
           transition={{ delay: 1.3, duration: 0.5 }}
           className='text-center'
         >
-          <h3 className='text-5xl md:text-7xl font-bold text-purple-500 mb-4'>20+</h3>
+          <h3 className='text-5xl md:text-7xl font-bold text-purple-500 mb-4'>10+</h3>
           <motion.p
             ref={ref}
             initial={{ opacity: 0, y: 100 }}
@@ -95,7 +95,7 @@ const About = () => {
             transition={{ delay: 1.4, duration: 0.5 }}
             className='text-sm sm:text-base text-gray-300'
           >
-            MERN Projects I have made
+            JavaScript & Frontend Projects
           </motion.p>
         </motion.div>
         <motion.div
@@ -105,7 +105,7 @@ const About = () => {
           transition={{ delay: 1.5, duration: 0.5 }}
           className='text-center'
         >
-          <h3 className='text-5xl md:text-7xl font-bold text-purple-500 mb-4'>30+</h3>
+          <h3 className='text-5xl md:text-7xl font-bold text-purple-500 mb-4'>1+</h3>
           <motion.p
             ref={ref}
             initial={{ opacity: 0, y: 100 }}
@@ -113,7 +113,7 @@ const About = () => {
             transition={{ delay: 1.6, duration: 0.5 }}
             className='text-sm sm:text-base text-gray-300'
           >
-            Years of Experience
+            Year of Learning
           </motion.p>
         </motion.div>
       </div>

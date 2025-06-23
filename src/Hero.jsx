@@ -1,6 +1,6 @@
 import React from 'react';
-import profileImg from "./assets/boy2.png";
-import { motion } from "motion/react"
+import profileImg from "./assets/munees.png";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
         }}
         src={profileImg}
         alt="Profile of Muneeswaran"
-       className="w-64 h-64 object-cover rounded-full mx-auto"
+        className="w-64 h-64 object-cover rounded-full mx-auto"
       />
 
       {/* Hero Content */}
@@ -43,7 +43,9 @@ const Hero = () => {
               delay: 1,
               duration: 0.5
             }}
-          >Software Engineer</motion.span>
+          >
+            Full Stack Developer (MERN)
+          </motion.span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 100 }}
@@ -52,8 +54,8 @@ const Hero = () => {
             delay: 1,
             duration: 0.5
           }}
-          className='mt-4 text-lg md:text-xl font-medium'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.
+          className='mt-4 text-lg md:text-xl font-medium text-gray-300'>
+          I’m a fresher passionate about building modern, responsive web applications using the MERN stack. I love turning ideas into real projects and am continuously learning to improve my skills.
         </motion.p>
       </motion.div>
 
@@ -78,7 +80,7 @@ const Hero = () => {
             duration: 0.5
           }}
           className='border border-white px-6 py-3 text-lg font-medium rounded-full hover:bg-white hover:text-purple-700 transition duration-300 cursor-pointer'>
-          My Story
+          My Projects
         </motion.button>
       </div>
     </section>

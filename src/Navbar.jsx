@@ -3,6 +3,7 @@ import { MdMenu } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
 import { motion } from "motion/react"
 import { Link } from 'react-scroll';
+import resume from "./assets/Muneeswaran_FullStack_Resume.pdf"
 
 const Navbar = () => {
   const variants = {
@@ -54,7 +55,15 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <a className='text-white md:text-base lg:text-lg bg-purple-800 hover: duration-300 hover:bg-purple-700 px-1 py-1 rounded-full cursor-pointer'>Download cv</a>
+        <a 
+        className='text-white md:text-base lg:text-lg bg-purple-800 hover: duration-300 hover:bg-purple-700 px-2 py-2 rounded-full cursor-pointer'
+        href={resume}
+        rel="noopener noreferrer"
+        target="_blank"
+        aria-label='View-Resume'
+        >
+        View Resume
+        </a>
       </motion.div>
 
       <div className='md:hidden flex justify-between '>
@@ -87,14 +96,19 @@ const Navbar = () => {
                     </li>
                   ))}
                 </ul>
-                <a className='md:text-base lg:text-lg bg-purple-800 hover:bg-purple-700 hover:duration-200 mt-6 px-1 py-1 rounded-full cursor-pointer'>Download cv</a>
+                <a 
+                className='md:text-base lg:text-lg bg-purple-800 hover:bg-purple-700 hover:duration-200 mt-6 px-2 py-2 rounded-full cursor-pointer'
+                href={resume}
+                target='_blank'
+                rel="noopener noreferrer"
+                aria-label='View Resume'
+                >
+                View Resume
+                </a>
               </div>
             )}
           </div>
         </motion.div>
-        {/*  <div className='text-xl font-mono flex items-center gap-2 py-6 px-4'>
-          <span>Munees</span>
-        </div> */}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
-import project1 from "./assets/project1.png";
-import project2 from "./assets/project2.png";
-import React from "react";
+import twitterclone from "./assets/twitter.png";
+import chatApp from "./assets/chat.png"
+import ECommers from "./assets/ecommers.png"
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 
@@ -9,17 +9,24 @@ const Work = () => {
     {
       id: 1,
       title: "Twitter-Clone",
-      image: project1,
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam incidunt.",
-      link: "#",
+      image: twitterclone,
+      description: "A minimalist Twitter/X clone built using React, Node.js, Express, and MongoDB. It supports user authentication, posting tweets, likes, and real-time updates. Designed with a focus on performance and a smooth UI using Tailwind CSS.",
+      link: "https://twitter-clone-1-933p.onrender.com/",
     },
     {
       id: 2,
       title: "Chat-App",
-      image: project2,
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam incidunt.",
-      link: "#",
+      image: chatApp,
+      description: "A real-time chat application built with React, Node.js, Express, Socket.io, and MongoDB. Features include user authentication using JWT, secure messaging, and a responsive UI. Perfect for instant communication with a smooth and modern interface.",
+      link: "https://chat-app-67u0.onrender.com/",
     },
+    {
+      id:3,
+      title: "E-Commers",
+      image: ECommers,
+      description : "A modern E-commerce web application built with React, Node.js, Express, and MongoDB. Features include user authentication using JWT, secure checkout with RazorPay integration, dynamic product management, cart functionality, coupon system, and a responsive user interface. Designed for seamless online shopping with a clean and intuitive experience.",
+      link : "https://e-commers-5ayz.onrender.com/"
+    }
   ];
 
   const { ref, inView } = useInView({
@@ -52,9 +59,7 @@ const Work = () => {
           }}
           className="mb-12 text-center text-gray-400"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam incidunt, enim doloremque
-          ipsum dolore eligendi, officiis, facilis nobis recusandae expedita ut aperiam et nesciunt
-          quo molestias voluptates optio tenetur asperiores!
+         I love building full-stack web applications that are fast, modern, and user-friendly. Here are some of my recent projects that showcase my skills in React, Node.js, and MongoDB.👇
         </motion.p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
@@ -72,7 +77,7 @@ const Work = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-60 object-cover rounded-lg"
+                className="w-100 h-60 object-cover rounded-lg"
               />
               <div className="mt-4">
                 <a
