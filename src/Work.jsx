@@ -25,7 +25,7 @@ const Work = () => {
       title: "E-Commers",
       image: ECommers,
       description : "A modern E-commerce web application built with React, Node.js, Express, and MongoDB. Features include user authentication using JWT, secure checkout with RazorPay integration, dynamic product management, cart functionality, coupon system, and a responsive user interface. Designed for seamless online shopping with a clean and intuitive experience.",
-      link : "https://e-commers-5ayz.onrender.com/"
+      link : "https://e-commers-1-7o5j.onrender.com/"
     }
   ];
 
@@ -81,6 +81,8 @@ const Work = () => {
               />
               <div className="mt-4">
                 <a
+                  target="_blank"
+                  rel="noopener"
                   href={project.link}
                   className="text-lg font-semibold text-purple-500 hover:underline text-center"
                 >
