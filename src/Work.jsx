@@ -1,6 +1,7 @@
 import twitterclone from "./assets/twitter.png";
-import chatApp from "./assets/chat.png"
-import ECommers from "./assets/ecommers.png"
+import chatApp from "./assets/chat.png";
+import ECommers from "./assets/ecommers.png";
+import TaskManager from "./assets/Taskmanager.png"
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 
@@ -8,25 +9,40 @@ const Work = () => {
   const projects = [
     {
       id: 1,
-      title: "Twitter-Clone",
+      title: "Twitter Clone",
       image: twitterclone,
-      description: "A minimalist Twitter/X clone built using React, Node.js, Express, and MongoDB. It supports user authentication, posting tweets, likes, and real-time updates. Designed with a focus on performance and a smooth UI using Tailwind CSS.",
+      stack: "React • Node.js • Express • MongoDB",
+      description:
+        "A full-stack social media application with authentication, tweet posting, likes, and a clean responsive interface inspired by Twitter/X.",
       link: "https://twitter-clone-1-933p.onrender.com/",
     },
     {
       id: 2,
-      title: "Chat-App",
+      title: "Chat App",
       image: chatApp,
-      description: "A real-time chat application built with React, Node.js, Express, Socket.io, and MongoDB. Features include user authentication using JWT, secure messaging, and a responsive UI. Perfect for instant communication with a smooth and modern interface.",
+      stack: "React • Socket.io • Node.js • MongoDB",
+      description:
+        "A real-time messaging platform with JWT authentication, secure communication, and a modern UI designed for fast and smooth conversations.",
       link: "https://chat-app-67u0.onrender.com/",
     },
     {
-      id:3,
-      title: "E-Commers",
+      id: 3,
+      title: "E-Commerce App",
       image: ECommers,
-      description : "A modern E-commerce web application built with React, Node.js, Express, and MongoDB. Features include user authentication using JWT, secure checkout with RazorPay integration, dynamic product management, cart functionality, coupon system, and a responsive user interface. Designed for seamless online shopping with a clean and intuitive experience.",
-      link : "https://e-commers-1-7o5j.onrender.com/"
-    }
+      stack: "React • Express • MongoDB • Razorpay",
+      description:
+        "A modern e-commerce application featuring secure login, cart management, online payments, coupon support, and a seamless shopping experience.",
+      link: "https://e-commers-1-7o5j.onrender.com/",
+    },
+    {
+      id: 4,
+      title: "Task-Manager",
+      image: TaskManager,
+      stack: "React • Express • MongoDB •TypeScript",
+      description:
+        "Built a MERN + TypeScriptbased task management application to efficiently create, update, and track tasks with a clean and responsive UI.",
+      link: "https://taskmanager27052006.netlify.app/",
+    },
   ];
 
   const { ref, inView } = useInView({
@@ -35,66 +51,82 @@ const Work = () => {
   });
 
   return (
-    <div className="py-12" id="work">
-      <div className="text-white max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <section className="py-16" id="work" ref={ref}>
+      <div className="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
-          ref={ref}
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 80 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{
-            delay: 0.3,
-            duration: 0.5,
+            duration: 0.4,
           }}
-          className="text-4xl text-center font-bold underline mb-12 decoration-purple-500"
+          className="text-4xl text-center font-bold underline mb-6 decoration-purple-500"
         >
           Work
         </motion.h2>
+
         <motion.p
-          ref={ref}
-          initial={{ opacity: 0, y: 100 }}
+          initial={{ opacity: 0, y: 80 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{
-            delay: 0.5,
-            duration: 0.5,
+            delay: 0.08,
+            duration: 0.4,
           }}
-          className="mb-12 text-center text-gray-400"
+          className="mb-12 max-w-3xl mx-auto text-center text-gray-400"
         >
-         I love building full-stack web applications that are fast, modern, and user-friendly. Here are some of my recent projects that showcase my skills in React, Node.js, and MongoDB.👇
+          A selection of projects that reflect my experience building responsive
+          full-stack applications with modern frontend design and practical
+          backend features.
         </motion.p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <motion.div
-              ref={ref}
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{
-                delay: index * 0.4,
-                duration: 0.5,
+                delay: 0.12 + index * 0.08,
+                duration: 0.35,
               }}
               key={project.id}
-              className="bg-gray-800 p-4 rounded-lg shadow-lg"
+              className="bg-[#1c1a2b] rounded-2xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-purple-900/40 hover:-translate-y-1 transition-all duration-300"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-100 h-60 object-cover rounded-lg"
-              />
-              <div className="mt-4">
+              <div className="overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-56 object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+
+              <div className="p-5">
+                <p className="text-sm text-purple-400 font-medium mb-2">
+                  {project.stack}
+                </p>
                 <a
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   href={project.link}
-                  className="text-lg font-semibold text-purple-500 hover:underline text-center"
+                  className="text-xl font-semibold text-white hover:text-purple-400 transition-colors duration-200"
                 >
                   {project.title}
                 </a>
-                <p className="text-gray-400 mt-2 text-center">{project.description}</p>
+                <p className="text-gray-400 mt-3 leading-7 text-sm sm:text-base">
+                  {project.description}
+                </p>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.link}
+                  className="inline-block mt-5 text-purple-400 font-medium hover:text-purple-300 transition-colors duration-200"
+                >
+                  View Project
+                </a>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

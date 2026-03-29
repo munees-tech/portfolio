@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { MdMenu } from "react-icons/md";
 import { IoIosClose } from "react-icons/io";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 import { Link } from 'react-scroll';
-import resume from "./assets/Muneeswaran_FullStack_Resume.pdf"
+import resume from "./assets/Muneeswaran_FullStack_Resume.pdf";
 
 const Navbar = () => {
   const variants = {
@@ -22,7 +22,8 @@ const Navbar = () => {
     { id: 1, text: "Home", to: "home" },
     { id: 2, text: "Services", to: "services" },
     { id: 3, text: "About", to: "about" },
-    { id: 4, text: "Contact", to: "contact" }
+    { id: 4, text: "Skills", to: "skills" },
+    { id: 5, text: "Contact", to: "contact" }
   ];
 
   return (
@@ -55,14 +56,14 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <a 
-        className='text-white md:text-base lg:text-lg bg-purple-800 hover: duration-300 hover:bg-purple-700 px-2 py-2 rounded-full cursor-pointer'
-        href={resume}
-        rel="noopener noreferrer"
-        target="_blank"
-        aria-label='View-Resume'
+        <a
+          className='text-white md:text-base lg:text-lg bg-purple-800 hover: duration-300 hover:bg-purple-700 px-2 py-2 rounded-full cursor-pointer'
+          href={resume}
+          rel="noopener noreferrer"
+          target="_blank"
+          aria-label='View-Resume'
         >
-        View Resume
+          View Resume
         </a>
       </motion.div>
 
@@ -82,28 +83,28 @@ const Navbar = () => {
                 className='flex flex-col justify-center items-center'>
                 <ul
                   className='space-y-6 text-white text-lg'>
-                  {items.map(({ id, text , to}) => (
+                  {items.map(({ id, text, to }) => (
                     <li
                       className='hover:text-purple-500 duration-200 cursor-pointer' key={id}>
-                       <Link
-                  to={to}
-                  smooth={true}
-                  duration={500}
-                  offset={-70}
-                >
-                  {text}
-                </Link>
+                      <Link
+                        to={to}
+                        smooth={true}
+                        duration={500}
+                        offset={-70}
+                      >
+                        {text}
+                      </Link>
                     </li>
                   ))}
                 </ul>
-                <a 
-                className='md:text-base lg:text-lg bg-purple-800 hover:bg-purple-700 hover:duration-200 mt-6 px-2 py-2 rounded-full cursor-pointer'
-                href={resume}
-                target='_blank'
-                rel="noopener noreferrer"
-                aria-label='View Resume'
+                <a
+                  className='md:text-base lg:text-lg bg-purple-800 hover:bg-purple-700 hover:duration-200 mt-6 px-2 py-2 rounded-full cursor-pointer'
+                  href={resume}
+                  target='_blank'
+                  rel="noopener noreferrer"
+                  aria-label='View Resume'
                 >
-                View Resume
+                  View Resume
                 </a>
               </div>
             )}

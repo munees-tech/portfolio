@@ -1,11 +1,11 @@
 import React from 'react';
 import profileImg from "./assets/munees.png";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
     <section className='text-white py-10' id='home'>
-      {/* Profile Image */}
       <motion.img
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -18,7 +18,6 @@ const Hero = () => {
         className="w-64 h-64 object-cover rounded-full mx-auto"
       />
 
-      {/* Hero Content */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -44,7 +43,7 @@ const Hero = () => {
               duration: 0.5
             }}
           >
-            Full Stack Developer (MERN)
+            Full Stack Developer (MERN + TypeScript)
           </motion.span>
         </motion.h1>
         <motion.p
@@ -55,33 +54,48 @@ const Hero = () => {
             duration: 0.5
           }}
           className='mt-4 text-lg md:text-xl font-medium text-gray-300'>
-          I’m a fresher passionate about building modern, responsive web applications using the MERN stack. I love turning ideas into real projects and am continuously learning to improve my skills.
+          I&apos;m a fresher passionate about building modern, responsive web applications using the MERN stack and TypeScript. I love turning ideas into real projects and continuously improving my skills.
         </motion.p>
       </motion.div>
 
-      {/* Action Buttons */}
       <div className='flex justify-center mt-10 space-x-4'>
-        <motion.button
+        <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
             delay: 1,
             duration: 0.5
           }}
-          className='bg-purple-700 hover:bg-purple-600 px-6 py-3 text-lg font-medium cursor-pointer rounded-full transition duration-300'>
-          Hire Me
-        </motion.button>
+        >
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className='bg-purple-700 hover:bg-purple-600 px-6 py-3 text-lg font-medium cursor-pointer rounded-full transition duration-300 inline-block'
+          >
+            Hire Me
+          </Link>
+        </motion.div>
 
-        <motion.button
+        <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{
             delay: 1,
             duration: 0.5
           }}
-          className='border border-white px-6 py-3 text-lg font-medium rounded-full hover:bg-white hover:text-purple-700 transition duration-300 cursor-pointer'>
-          My Projects
-        </motion.button>
+        >
+          <Link
+            to="work"
+            smooth={true}
+            duration={500}
+            offset={-70}
+            className='border border-white px-6 py-3 text-lg font-medium rounded-full hover:bg-white hover:text-purple-700 transition duration-300 cursor-pointer inline-block'
+          >
+            My Projects
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
