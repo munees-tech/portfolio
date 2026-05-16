@@ -37,11 +37,11 @@ const Navbar = () => {
         className='container mx-auto hidden md:flex justify-between items-center py-6'>
         <div className='font-xl lg:font-2xl font-mono flex items-center gap-1'>
           <div>
-            <span className='text-white hover:text-purple-500 hover:duration-200'>Munees</span>
+            <span className='text-slate-950 hover:text-purple-500 hover:duration-200'>Munees</span>
           </div>
         </div>
         <div>
-          <ul className='hidden md:flex items-center space-x-4 list-none lg:text-lg md:text-base text-white cursor-pointer'>
+          <ul className='hidden md:flex items-center space-x-4 list-none lg:text-lg md:text-base text-slate-950 cursor-pointer'>
             {items.map(({ id, text, to }) => (
               <li className='hover:text-purple-500 duration-200' key={id}>
                 <Link

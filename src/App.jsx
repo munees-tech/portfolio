@@ -9,7 +9,7 @@ import Skills from "./Skills";
 
 const App = () => {
   return (
-    <div className='bg-gray-800'>
+    <div className='min-h-screen bg-[#faf9f6]'>
       <Navbar />
       <Hero />
       <About />

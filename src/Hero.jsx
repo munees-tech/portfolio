@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <section className='text-white py-10' id='home'>
+    <section className='text-slate-950 py-10' id='home'>
       <motion.img
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -53,7 +53,7 @@ const Hero = () => {
             delay: 1,
             duration: 0.5
           }}
-          className='mt-4 text-lg md:text-xl font-medium text-gray-300'>
+          className='mt-4 text-lg md:text-xl font-medium text-slate-600'>
           I&apos;m a fresher passionate about building modern, responsive web applications using the MERN stack and TypeScript. I love turning ideas into real projects and continuously improving my skills.
         </motion.p>
       </motion.div>
@@ -91,7 +91,7 @@ const Hero = () => {
             smooth={true}
             duration={500}
             offset={-70}
-            className='border border-white px-6 py-3 text-lg font-medium rounded-full hover:bg-white hover:text-purple-700 transition duration-300 cursor-pointer inline-block'
+            className='border border-purple-700 text-purple-700 px-6 py-3 text-lg font-medium rounded-full hover:bg-purple-700 hover:text-white transition duration-300 cursor-pointer inline-block'
           >
             My Projects
           </Link>

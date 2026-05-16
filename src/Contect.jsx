@@ -27,14 +27,14 @@ const Contect = () => {
           initial={{ opacity: 0, y: -100 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4 }}
-          className='text-white text-4xl font-bold '>Let&apos;s discuss<span className='text-purple-500'> Your Project</span></motion.h2>
+          className='text-slate-950 text-4xl font-bold '>Let&apos;s discuss<span className='text-purple-500'> Your Project</span></motion.h2>
         <motion.p
           initial={{ opacity: 0, y: -100 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4, delay: 0.08 }}
-          className='text-slate-400 text-center mt-2'>Have an idea or project in mind? I&apos;m always open to new opportunities and collaborations. Let&apos;s connect and bring your vision to life!</motion.p>
+          className='text-slate-600 text-center mt-2'>Have an idea or project in mind? I&apos;m always open to new opportunities and collaborations. Let&apos;s connect and bring your vision to life!</motion.p>
       </div>
-      <div className='max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-white'>
+      <div className='max-w-7xl px-4 sm:px-6 lg:px-8 mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-950'>
         <div className='space-y-6'>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -83,7 +83,7 @@ const Contect = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.4, delay: 0.16 }}
-          className='text-white space-y-4'>
+          className='text-slate-950 space-y-4'>
           <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
             <input
               className='border border-purple-500 p-4 rounded-md w-full'
@@ -110,9 +110,9 @@ const Contect = () => {
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         transition={{ duration: 0.35, delay: 0.2 }}
-        className="text-white mt-12 flex flex-col md:flex-row justify-between items-center border-t-2 border-purple-500 p-6 space-y-4 md:space-y-0"
+        className="text-slate-950 mt-12 flex flex-col md:flex-row justify-between items-center border-t-2 border-purple-500 p-6 space-y-4 md:space-y-0"
       >
-        <p className="text-sm md:text-base">© {year} Copyright Reserved</p>
+        <p className="text-sm md:text-base">&copy; {year} Copyright Reserved</p>
         <p className="text-sm md:text-base font-semibold">Munees</p>
         <div className="flex justify-center space-x-4">
           <a href="#" aria-label="Facebook" className="hover:text-purple-500">

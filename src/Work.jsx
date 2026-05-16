@@ -52,7 +52,7 @@ const Work = () => {
 
   return (
     <section className="py-16" id="work" ref={ref}>
-      <div className="text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-slate-950 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 80 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -71,7 +71,7 @@ const Work = () => {
             delay: 0.08,
             duration: 0.4,
           }}
-          className="mb-12 max-w-3xl mx-auto text-center text-gray-400"
+          className="mb-12 max-w-3xl mx-auto text-center text-slate-600"
         >
           A selection of projects that reflect my experience building responsive
           full-stack applications with modern frontend design and practical
@@ -88,7 +88,7 @@ const Work = () => {
                 duration: 0.35,
               }}
               key={project.id}
-              className="bg-[#1c1a2b] rounded-2xl overflow-hidden border border-gray-700 shadow-lg hover:shadow-purple-900/40 hover:-translate-y-1 transition-all duration-300"
+              className="bg-white rounded-2xl overflow-hidden border border-stone-200 shadow-lg shadow-stone-200/70 hover:shadow-purple-200 hover:-translate-y-1 transition-all duration-300"
             >
               <div className="overflow-hidden">
                 <img
@@ -106,18 +106,18 @@ const Work = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.link}
-                  className="text-xl font-semibold text-white hover:text-purple-400 transition-colors duration-200"
+                  className="text-xl font-semibold text-slate-950 hover:text-purple-600 transition-colors duration-200"
                 >
                   {project.title}
                 </a>
-                <p className="text-gray-400 mt-3 leading-7 text-sm sm:text-base">
+                <p className="text-slate-600 mt-3 leading-7 text-sm sm:text-base">
                   {project.description}
                 </p>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href={project.link}
-                  className="inline-block mt-5 text-purple-400 font-medium hover:text-purple-300 transition-colors duration-200"
+                  className="inline-block mt-5 text-purple-600 font-medium hover:text-purple-500 transition-colors duration-200"
                 >
                   View Project
                 </a>

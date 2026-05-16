@@ -11,7 +11,7 @@ const About = () => {
   });
 
   return (
-    <div className='text-white py-20' id='about' ref={ref}>
+    <div className='text-slate-950 py-20' id='about' ref={ref}>
       <div className='container mx-auto px-6 text-center'>
         <motion.h2
           initial={{ opacity: 0, y: 100 }}
@@ -25,7 +25,7 @@ const About = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.08, duration: 0.45 }}
-          className='mb-12 text-gray-400 max-w-2xl mx-auto leading-relaxed'
+          className='mb-12 text-slate-600 max-w-2xl mx-auto leading-relaxed'
         >
           I&apos;m a passionate and motivated fresher who is currently focused on full-stack development using the MERN stack and TypeScript. I enjoy learning by building real-world projects and constantly improving my skills through hands-on experience.
         </motion.p>
@@ -48,7 +48,7 @@ const About = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0.18, duration: 0.45 }}
-          className='md:w-1/2 text-gray-400 text-base lg:text-lg md:text-xl leading-relaxed'
+          className='md:w-1/2 text-slate-600 text-base lg:text-lg md:text-xl leading-relaxed'
         >
           I started my web development journey recently and have built multiple frontend and full-stack projects using technologies like React, Node.js, Express, MongoDB, and TypeScript. I&apos;m always eager to learn new things and excited to kickstart my career as a developer.
         </motion.p>
@@ -67,7 +67,7 @@ const About = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.22, duration: 0.4 }}
-            className='text-sm sm:text-base text-gray-300'
+            className='text-sm sm:text-base text-slate-600'
           >
             MERN Projects I have Made
           </motion.p>
@@ -83,7 +83,7 @@ const About = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.28, duration: 0.4 }}
-            className='text-sm sm:text-base text-gray-300'
+            className='text-sm sm:text-base text-slate-600'
           >
             JavaScript & Frontend Projects
           </motion.p>
@@ -99,7 +99,7 @@ const About = () => {
             initial={{ opacity: 0, y: 100 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.34, duration: 0.4 }}
-            className='text-sm sm:text-base text-gray-300'
+            className='text-sm sm:text-base text-slate-600'
           >
             Year of Learning
           </motion.p>
